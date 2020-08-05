@@ -1,0 +1,61 @@
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+main h2 {
+    margin: 15px 10px;
+    border-bottom: 1px solid gray;
+}
+
+
+/* groups and items (parent and children) */
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+
+.child {
+    flex: 1;
+    margin: 15px;
+}
+
+.largechild {
+    flex: 2;
+    margin: 15px;
+}
+
+
+/* Desktop view groups and items (parent and children) */
+
+@media all and (min-width: 650px) {
+    section {
+        padding: 0 10%;
+    }
+    .parent {
+        flex-direction: row;
+    }
+}
+
+
+/* contact form styling */
+
+form {
+    padding-right: 6px;
+    /*may end up not being needed, need to check*/
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+form textarea {
+    height: 160px;
+}

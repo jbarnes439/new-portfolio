@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email form</title>
+    <link href="contact-style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>"DM" Me</h2>
+            <form action="https://formspree.io/mjvaljro" method="POST">
+                <fieldset>
+                    <legend>Email</legend>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" name="personName" placeholder="First and Last">
+                    </div>
+                    <div>
+                        <label for="emailAddress">Email address:</label>
+                        <input id="emailAddress" type="email" name="" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" type="text" message="messageRelayed" placeholder="How can I help you?"></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit">Let's connect!</button>
+                <button type="reset">Take it back.</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>

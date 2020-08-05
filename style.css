@@ -1,0 +1,123 @@
+/*Mobile first CSS using flexbox */
+
+body {
+    margin: 0;
+    background-color: #31493C;
+}
+
+header {
+    background-color: #31493C;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #64869c;
+    text-align: center;
+    margin: 0;
+    padding-top: 25px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px 0 0;
+}
+
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+main {
+    background-color: #31493C;
+    padding-bottom: 50px;
+}
+
+h2,
+h3,
+h4 {
+    color: hsl(36, 78%, 73%);
+}
+
+p,
+li {
+    color: #D9E5D6;
+    text-decoration: none;
+}
+
+footer p {
+    color: #D9E5D6;
+}
+
+
+/* flexbox parent/children or group/item */
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.child {
+    flex: 1;
+    text-align: center;
+}
+
+.child li {
+    list-style-position: inside;
+}
+
+a:link {
+    color: #E7EBC5
+}
+
+a:visited {
+    color: #754668
+}
+
+a:active {
+    color: #00241B
+}
+
+
+/* Desktop style CSS */
+
+@media all and (min-width:600px) {
+    /* Nav bar CSS */
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 45px;
+    }
+    header h1 {
+        margin: 14px 0;
+        padding-top: 30px;
+    }
+    header nav {
+        margin-top: 40px;
+    }
+    header nav ul li a:hover {
+        color: purple;
+    }
+    /* desktop group/item (parent/child) CSS */
+    .parent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .child {
+        flex: 1;
+    }
+    a:hover {
+        color: #9A98B5
+    }
+}
